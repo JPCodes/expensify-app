@@ -1,3 +1,12 @@
 html {
   font-size: 62.5%; // base 10 rem size
 }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+}
+
+.is-active {
+  font-weight: bold;
+}

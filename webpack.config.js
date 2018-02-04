@@ -23,6 +23,7 @@ module.exports = {
   },
   devtool: 'cheap-module-eval-source-map', // Compile and show original lines for errors, console logs, etc.
   devServer: {
-    contentBase: path.join(__dirname, 'public')
+    contentBase: path.join(__dirname, 'public'),
+    historyApiFallback: true // Serve index for 404's; routing handled by client-side code (not for production)
   }
 };
